@@ -1,0 +1,18 @@
+﻿return {
+  Title = "自用合集",
+  Version = "1.0.1",
+  GameVersion = "1.0.67",
+  Author = "506977646",
+  Description = "自用mod合集。包含：云游道易天改命无配平、出生特质无限制",
+  BackendPlugins = { "EasyFeatureExchange.Backend.dll" },
+  FrontendPlugins = { "EasyFeatureExchange.Frontend.dll", "TaiwuMod_FreeStartPoint.dll" },
+  NeedRestartWhenSettingChanged = false,
+  HasArchive = false,
+  Source = 0,
+  FileId = 3760160785,
+  WorkshopCover = nil,
+  Visibility = 0,
+  DefaultSettings = { },
+  UpdateLogList = { },
+  ChangeConfig = false,
+}

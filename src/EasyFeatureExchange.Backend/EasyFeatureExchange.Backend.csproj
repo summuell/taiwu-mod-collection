@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>EasyFeatureExchange.Backend</AssemblyName>
+    <RootNamespace>EasyFeatureExchange.Backend</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <TaiwuGameDir>$([MSBuild]::GetRegistryValue('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 838350','InstallLocation'))</TaiwuGameDir>
+    <TaiwuSideDir>$(TaiwuGameDir)\Backend</TaiwuSideDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GameData">
+      <HintPath>$(TaiwuSideDir)\GameData.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GameData.Common">
+      <HintPath>$(TaiwuSideDir)\GameData.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GameData.Shared">
+      <HintPath>$(TaiwuSideDir)\GameData.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaiwuModdingLib">
+      <HintPath>$(TaiwuSideDir)\TaiwuModdingLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(TaiwuSideDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputPath>..\..\mod\Plugins\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+</Project>

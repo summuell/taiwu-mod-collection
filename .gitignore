@@ -1,0 +1,30 @@
+﻿# === Build ===
+bin/
+obj/
+*.pdb
+*.exe
+*.deps.json
+*.runtimeconfig.json
+*.nupkg
+
+# === IDE ===
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+
+# === OS ===
+Thumbs.db
+.DS_Store
+
+# === Mod dev ===
+# 反编译产物（体积大，可由游戏 DLL 重新生成）
+decompiled/
+
+# mod 的运行时生成文件不上传
+mod/Settings.Lua
+
+# === Codex ===
+.codex/
+.agents/
